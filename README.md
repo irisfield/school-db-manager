@@ -90,8 +90,8 @@ DB_PASSWORD=<your_password>
 ```
 
 The `DB_USER` and `DB_PASSWORD` should match the credentials you used when
-importing the database schema and data in step
-[3.1](#import-the-database-schema-and-data).
+importing the database schema and data in [step
+3.1](31-import-the-database-schema-and-data).
 
 ### 5. Run the Server
 
@@ -136,5 +136,5 @@ You should see the web interface where you can:
 - **Database Connection Issues**: Ensure that your MySQL server is running and
   the credentials in your `.env` file are correct.
 - **Missing `.env` File**: If the `.env` file is not found, create one in the
-  project root directory (`../school-db-mananger/.env`) and continue from step
-  [4](#configure-environment-variables).
+  project root directory (`../school-db-mananger/.env`) and continue from [step
+  4](#4-configure-environment-variables).
