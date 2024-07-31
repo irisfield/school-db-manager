@@ -93,7 +93,6 @@ DB_PASSWORD=<your_password>
 The `DB_USER` and `DB_PASSWORD` should match the credentials you used when
 importing the database schema and data in [step 3.1](#3.1).
 
-
 ### 5. Run the Server
 
 **On Linux/macOS:**
