@@ -56,7 +56,7 @@ npm install
 2. Navigate to the project root directory (`..\school-db-manager`).
 3. Import the SQL file:
 
-    ```ps
+    ```powershell
     cmd.exe /c "mysql.exe -u root -p < mysql\create-school-db.sql"
     ```
 
@@ -68,7 +68,7 @@ npm install
    If the `mysql.exe` command is not found, add it to your PATH (`$env:PATH`) by
    running:
 
-   ```ps
+   ```powershell
    $mysqlPath = "${env:ProgramFiles}\MySQL\MySQL Server 9.0\bin"
    if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force | Out-Null }
    Add-Content -Path $PROFILE -Value "`$env:PATH += `";$mysqlPath`""
