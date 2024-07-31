@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management Database</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Database Interaction</h1>
+  </header>
+  <div class="container">
+    <nav>
+      <ul class="tabs">
+        <li><button class="tab-button" data-tab="query">Query</button></li>
+        <li><button class="tab-button" data-tab="update">Update</button></li>
+        <li><button class="tab-button" data-tab="delete">Delete</button></li>
+      </ul>
+    </nav>
+    
+    <div id="query" class="tab-content">
+      <h2>Query Data</h2>
+      <form id="query-form">
+        <label for="table-select-query">Select Table:</label>
+        <div class="select-wrapper">
+          <select id="table-select-query" name="table">
+            <!-- Options will be populated by JavaScript -->
+          </select>
+        </div>
+        <label for="value-input-query">Query:</label>
+        <input type="text" id="value-input-query" name="query" placeholder="Enter query here">
+        <button type="submit">Query</button>
+      </form>
+    </div>
+    
+    <div id="update" class="tab-content">
+      <h2>Update Data</h2>
+      <form id="update-form">
+        <label for="table-select-update">Select Table:</label>
+        <div class="select-wrapper">
+          <select id="table-select-update" name="table">
+            <!-- Options will be populated by JavaScript -->
+          </select>
+        </div>
+        <label for="column-select-update">Column:</label>
+        <select id="column-select-update" name="column" disabled>
+          <!-- Options will be populated dynamically -->
+        </select>
+        <label for="value-select-update">Value:</label>
+        <select id="value-select-update" name="value" disabled>
+          <!-- Options will be populated dynamically -->
+        </select>
+        <label for="value-input-update">New Value:</label>
+        <input type="text" id="value-input-update" name="value-input-update" placeholder="Enter new value">
+        <button type="submit">Update</button>
+      </form>
+    </div>
+    
+    <div id="delete" class="tab-content">
+      <h2>Delete Data</h2>
+      <form id="delete-form">
+        <label for="table-select-delete">Select Table:</label>
+        <div class="select-wrapper">
+          <select id="table-select-delete" name="table">
+            <!-- Options will be populated by JavaScript -->
+          </select>
+        </div>
+        <label for="column-select-delete">Column:</label>
+        <select id="column-select-delete" name="column" disabled>
+          <!-- Options will be populated dynamically -->
+        </select>
+        <label for="value-select-delete">Value:</label>
+        <select id="value-select-delete" name="value" disabled>
+          <!-- Options will be populated dynamically -->
+        </select>
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+    
+    <div id="data-container"></div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

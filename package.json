@@ -1,0 +1,23 @@
+{
+  "name": "school-db-site",
+  "version": "1.0.0",
+  "description": "A simple website to interact with the school management database.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "client": "http-server ./client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "author": "irisfield",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "mysql2": "^3.11.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "http-server": "^14.1.1"
+  }
+}
