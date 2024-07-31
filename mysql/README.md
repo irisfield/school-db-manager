@@ -55,3 +55,7 @@ the `school_management` database:
   - Retrieve instructors and their teaching interests.
   - Find students who have only received "A" grades in all their courses.
   - Retrieve students who have not taken more than two courses.
+
+## Setup Instructions
+
+Please follow the instructions listed [here](../README.md#3).
