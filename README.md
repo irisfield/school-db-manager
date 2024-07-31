@@ -32,9 +32,10 @@ dependencies:
 npm install
 ```
 
-### 3. Setup the Database
+### 3. Setup the Database<a id='3'></a>
 
-#### 3.1 Import the Database Schema and Data
+
+#### 3.1 Import the Database Schema and Data<a id='3.1'></a>
 
 **On Linux/macOS:**
 
@@ -77,7 +78,7 @@ npm install
    Ensure `$mysqlPath` points to the directory where your MySQL Server `bin`
    folder is located.
 
-### 4. Configure Environment Variables
+### 4. Configure Environment Variables<a id='4'></a>
 
 Ensure that you have a `.env` file in the project root directory. This file
 should contain the following environment variables:
@@ -90,8 +91,8 @@ DB_PASSWORD=<your_password>
 ```
 
 The `DB_USER` and `DB_PASSWORD` should match the credentials you used when
-importing the database schema and data in step
-[3.1](#import-the-database-schema-and-data).
+importing the database schema and data in [step 3.1](#3.1).
+
 
 ### 5. Run the Server
 
@@ -136,5 +137,4 @@ You should see the web interface where you can:
 - **Database Connection Issues**: Ensure that your MySQL server is running and
   the credentials in your `.env` file are correct.
 - **Missing `.env` File**: If the `.env` file is not found, create one in the
-  project root directory (`../school-db-mananger/.env`) and continue from step
-  [4](#configure-environment-variables).
+  project root directory (`../school-db-mananger/.env`) and continue from [step 4](#4).
