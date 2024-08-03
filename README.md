@@ -1,8 +1,8 @@
 # School Management Database
 
-This project provides a web interface to interact with a MySQL database. It
-allows users to view tables, execute queries, and update or delete records via
-a web interface.
+This project offers a web interface for interacting with a MySQL database,
+allowing users to view tables, execute queries, and update or delete records
+through a user-friendly web interface. Originally developed as part of my Database Systems class, where I focused on the conceptual design. I extended it beyond the course requirements to further explore the interaction between servers, clients, and Database Management Systems (DBMS) in web environments for learning purposes.
 
 ## Prerequisites
 
